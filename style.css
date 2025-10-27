@@ -24,15 +24,17 @@
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    color: var(--white-heading);
+    color: var(--white-paragraph);
+    text-align: center;
+    font-size: var(--font-size);
 }
 
 .lexend-deca-font-family {
     font-family: "Lexend Deca", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 400;
+    font-weight: 700;
     font-style: normal;
-    color: var(--white-paragraph);
+    color: var(--white-heading);
     text-align: center;
     font-size: var(--font-size);
 }
@@ -90,8 +92,9 @@ body {
 }
 
 .main-description h1 {
-    font-size: clamp(1.5rem, 3vw, 2rem);
+    font-size: clamp(1.4rem, 3vw, 2rem);
     text-align: center;
+    margin-block-start: 1rem;
 }
 
 .main-description span {
@@ -102,3 +105,18 @@ body {
     margin-block-start: 1rem;
 }
 
+.social-icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icons span {
+    font-size: clamp(1.2rem, 3vw, 1.8rem);
+}
+
+.social-icons p {
+    font-size: var(--font-size);
+    margin-block-end: 1rem;
+}
