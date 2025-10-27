@@ -1,0 +1,104 @@
+:root {
+    /* Colors */
+    /* Primary */
+    --navy-main-background: hsl(233, 47%, 7%);
+    --blue-card-background: hsl(244, 37%, 16%);
+    --purple-accent: hsl(277, 64%, 61%);
+    /* Neutral */
+    --white-heading: hsl(0, 0%, 100%);
+    --white-paragraph: hsla(0, 0%, 100%, 0.75);
+    --white-stat-headings: hsla(0, 0%, 100%, 0.6);
+
+    /* Fonts */
+    --font-size: clamp(13.6px, 3vw, 1.2rem);
+
+    /* Widths */
+    --mobile-body-width: clamp(23.5rem, 100%, 38rem);
+    /* 375px; */
+    --desktop-body-width: clamp(90rem, 100%, 99rem);
+    /* 1440px; */
+}
+
+.inter-font-family {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--white-heading);
+}
+
+.lexend-deca-font-family {
+    font-family: "Lexend Deca", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--white-paragraph);
+    text-align: center;
+    font-size: var(--font-size);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: var(--mobile-body-width);
+    min-height: 100vh;
+    background-color: var(--navy-main-background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white-heading);
+}
+
+.container-component {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    padding-block-end: 1.5rem;
+    width: 80%;
+    height: 680px;
+    border-radius: 8px;
+    background-color: var(--blue-card-background);
+    overflow: hidden;
+}
+
+.image-hero {
+    width: 100%;
+    height: 50%;
+}
+
+.image-hero img {
+    width: 100%;
+    height: 90%;
+}
+
+.container-description {
+    width: 90%;
+    height: 50%;
+    font-weight: 700;
+    padding-inline: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.main-description h1 {
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    text-align: center;
+}
+
+.main-description span {
+    color: var(--purple-accent);
+}
+
+.main-description p {
+    margin-block-start: 1rem;
+}
+
